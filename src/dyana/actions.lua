@@ -100,7 +100,7 @@ actions.combine = function(...)
     else
         local actions = {...}
         return function(time)
-            for i = 1, count-1 do
+            for i = 1, count - 1 do
                 actions[i](time)
             end
             return actions[count](time)
